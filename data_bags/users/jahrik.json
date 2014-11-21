@@ -1,0 +1,7 @@
+{
+"id": "jahrik",
+"ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJLCOI3e4Uto5b9KxuZZFJL/DIpwPWQp2Jg5ef0HpTFNUf6w+5g9R4I8DhEmqmT5ad1qr/mdhRB837rBuJkHvrPkK3qirb/F5FjOz9Za+tHlYBTvNroTBP1TbOzdhnINfsKRlwXi9IvPumJCFxc4quQc5p1RYnG/4vt1+xZbyy4BREbwbc03xP638pifv7an2rq1Ocjjr8sCltQ5fvRSNVciiEk7te8balvtQ55/1wESC5xSPCierH8bjI0euXGwa0DxohUJlngP4I8QlvI0E2bTmferNPM3xKQsO6UXrgax+xFSRg2eoJ1mAQqmFQkKDnH3w15VhN/c8QvmMAu/ab jahrik@jahrik",
+"groups": [ "sysadmin", "dba", "devops" ],
+"uid": 2001,
+"shell": "/bin/bash"
+}
