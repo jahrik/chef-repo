@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "precise64_chef"
+  config.vm.box = "ubuntu13.04_chef"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -123,14 +123,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.encrypted_data_bag_secret_key_path = "#{ENV['HOME']}/chef-repo/.chef/encrypted_data_bag_secret"
     chef.node_name = "#{node}"    
     chef.provisioning_path = "/etc/chef"
-    chef.log_level = :debug
-    #chef.log_level = :info
+    #chef.log_level = :debug
+    chef.log_level = :info
     
     chef.environment = "dev"
     chef.add_role("base")
-    chef.add_role("db_master")
-    chef.add_role("webserver")
-    
-    #chef.json.merge!({ :mysql_password => "foo" }) # You can do this to override any default attributes for this node
+    #chef.add_role("db_master")
+    #chef.add_role("webserver")
   end
 end
